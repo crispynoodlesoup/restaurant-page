@@ -10,6 +10,14 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 #content {
   height: 100vh;
   width: 100vw;
@@ -18,19 +26,37 @@ body {
   background-image: url("../src/waffle_salt.png");
   background-color: #050505;
   background-size: auto 100vh;
-  background-position: 0% 50%;
+  background-position: 50% 0%;
   background-repeat: no-repeat;
 }
 
 nav {
   padding: 8px 16px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: #f3f3f32c;
 }
 
+nav ul {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
 nav h2 {
   color: white;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 800;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  font-size: 20px;
+  color: gold;
 }
 
 main {
