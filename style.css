@@ -23,7 +23,14 @@ body {
 }
 
 nav {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
   background-color: #f3f3f32c;
+}
+
+nav h2 {
+  color: white;
 }
 
 main {
