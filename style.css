@@ -60,6 +60,20 @@ nav h2 {
 }
 
 main {
+  display: grid;
+  justify-content: right;
+  padding: 64px;
+}
+
+.welcome {
+  text-align: center;
+  width: 320px;
+  background-color: #f3f3f334;
+  padding: 32px;
+}
+
+.welcome h1 {
+  color: white;
 }
 
 footer {
