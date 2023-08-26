@@ -21,11 +21,18 @@ a {
 nav {
   position: fixed;
   width: 100%;
-  padding: 8px 16px;
+  padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f3f3f32c;
+  background-color: #ffd98796;
+  transition: background-color 0.5s;
+  color: white;
+}
+
+.scrolled {
+  background-color: #ffd987d0;
+  color: white;
 }
 
 nav ul {
@@ -35,22 +42,24 @@ nav ul {
 }
 
 nav h2 {
-  color: white;
+  color: #fff6e4;
+  transition: color 0.3s;
 }
 
 nav h2:hover {
+  color: white;
   cursor: pointer;
 }
 
 .nav-link {
-  color: white;
   font-weight: 800;
+  color: #ffedc7;
   transition: all 0.3s ease-in-out;
 }
 
 .nav-link:hover {
   font-size: 20px;
-  color: gold;
+  color: white;
   cursor: pointer;
 }
 
@@ -63,23 +72,20 @@ main {
   height: 100vh;
   display: grid;
   justify-content: right;
-  padding-top: 49px;
+  padding-top: 65px;
 }
 
 .welcome {
   margin: 64px;
   text-align: center;
+  background-color: #f3f3f32c;
   width: 320px;
-  background-color: rgba(255, 255, 255, 0.562);
+  color: white;
   padding: 32px;
 }
 
 .welcome img {
   width: 128px;
-}
-
-.welcome h1 {
-  color: rgb(0, 0, 0);
 }
 
 footer {
