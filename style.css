@@ -74,6 +74,10 @@ main {
   padding: 32px;
 }
 
+.welcome img {
+  width: 128px;
+}
+
 .welcome h1 {
   color: rgb(0, 0, 0);
 }
