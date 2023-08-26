@@ -18,19 +18,9 @@ a {
   text-decoration: none;
 }
 
-#content {
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-rows: 4rem 1fr 4rem;
-  background-image: url("../src/waffle_salt.png");
-  background-color: #050505;
-  background-size: auto 100vh;
-  background-position: 50% 0%;
-  background-repeat: no-repeat;
-}
-
 nav {
+  position: fixed;
+  width: 100%;
   padding: 8px 16px;
   display: flex;
   justify-content: space-between;
@@ -65,22 +55,39 @@ nav h2:hover {
 }
 
 main {
+  background-image: url("../src/waffle_salt.png");
+  background-color: #050505;
+  background-size: auto 100vh;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  height: 100vh;
   display: grid;
   justify-content: right;
-  padding: 64px;
+  padding-top: 49px;
 }
 
 .welcome {
+  margin: 64px;
   text-align: center;
   width: 320px;
-  background-color: #f3f3f334;
+  background-color: rgba(255, 255, 255, 0.562);
   padding: 32px;
 }
 
 .welcome h1 {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 footer {
-  /*background-color: #00000073;*/
+  padding: 16px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+footer p a {
+  color: white;
+  text-decoration: underline;
 }
