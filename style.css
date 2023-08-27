@@ -135,6 +135,23 @@ main {
   color: white;
 }
 
+.contact {
+  margin: 64px;
+  text-align: center;
+  background-color: #f3f3f32c;
+  width: 380px;
+  height: fit-content;
+  color: white;
+  padding: 32px;
+}
+
+.coordinates {
+  color: #ffe8b5;
+  font-size: 14px;
+  font-weight: 800;
+  margin: 8px 0;
+}
+
 footer {
   display: flex;
   flex-direction: column;
