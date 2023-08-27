@@ -1,6 +1,6 @@
 const content = document.querySelector("#content");
 
-function buildContent() {
+function buildNav() {
     const nav = document.createElement("nav");
 
     const navTitle = document.createElement("h2");
@@ -25,7 +25,9 @@ function buildContent() {
     nav.appendChild(navList);
 
     content.appendChild(nav);
+}
 
+function buildHomeMain() {
     const main = document.createElement("main");
     
     const welcome = document.createElement("div");
@@ -46,7 +48,9 @@ function buildContent() {
     main.appendChild(welcome);
 
     content.appendChild(main);
+}
 
+function buildFooter() {
     const footer = document.createElement("footer");
 
     const footerText = document.createElement("p");
@@ -61,7 +65,9 @@ function buildContent() {
     content.appendChild(footer);
 }
 
-buildContent();
+buildNav();
+buildHomeMain();
+buildFooter();
 
 window.onscroll = function() { handleNav() };
 
