@@ -164,7 +164,28 @@ function buildMenu() {
 function buildContactMain() {
   const main = document.createElement("main");
 
-  const contact = document.createElement("main");
+  const contact = document.createElement("div");
+  contact.className = "contact";
+
+  const contactTitle = document.createElement("h1");
+  contactTitle.innerText = "Contact Eric!";
+  contactTitle.className = "contect-text";
+  contact.appendChild(contactTitle);
+
+  const contactText = document.createElement("p");
+  contactText.innerText = "Eric is a very busy man, so it's best to meet him in person at these coordinates:"
+  contact.appendChild(contactText);
+
+  const contactCoordinates = document.createElement("p");
+  contactCoordinates.className = "coordinates";
+  contactCoordinates.innerText = "Latitude: 11.22943, Longitude: -175.51065";
+  contact.appendChild(contactCoordinates);
+
+  const contactText2 = document.createElement("p");
+  contactText2.innerText = "Good luck!"
+  contact.appendChild(contactText2);
+
+  main.appendChild(contact);
 
   content.appendChild(main);
 }
