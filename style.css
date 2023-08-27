@@ -42,12 +42,11 @@ nav ul {
 }
 
 nav h2 {
-  color: #fff6e4;
+  color: white;
   transition: color 0.3s;
 }
 
 nav h2:hover {
-  color: white;
   cursor: pointer;
 }
 
@@ -80,12 +79,18 @@ main {
   text-align: center;
   background-color: #f3f3f32c;
   width: 320px;
+  height: fit-content;
   color: white;
   padding: 32px;
 }
 
+.welcome p {
+  margin-top: 16px;
+}
+
 .welcome img {
   width: 128px;
+  margin-top: -16px;
 }
 
 footer {
