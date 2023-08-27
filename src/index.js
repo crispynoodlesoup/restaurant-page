@@ -41,13 +41,20 @@ function buildFooter() {
     const footer = document.createElement("footer");
 
     const footerText = document.createElement("p");
-    footerText.innerText = "Made by ";
+    footerText.innerText = "Website by ";
     const githubLink = document.createElement("a");
     githubLink.innerText = "Rafael P.";
     githubLink.href = "https://github.com/crispynoodlesoup"; 
     githubLink.target = "_blank";
     footerText.appendChild(githubLink);
     footer.appendChild(footerText);
+
+    const iconsText = document.createElement("a");
+    iconsText.innerText = "Cute icons created by narak0rn - Flaticon";
+    iconsText.classList.add("icon-text");
+    iconsText.href = "https://www.flaticon.com/free-icons/cute"; 
+    iconsText.title = "cute icons";
+    footer.appendChild(iconsText);
 
     content.appendChild(footer);
 }
