@@ -53,6 +53,7 @@ function buildFooter() {
     iconsText.innerText = "Cute icons created by narak0rn - Flaticon";
     iconsText.classList.add("icon-text");
     iconsText.href = "https://www.flaticon.com/free-icons/cute"; 
+    githubLink.target = "_blank";
     iconsText.title = "cute icons";
     footer.appendChild(iconsText);
 
@@ -162,6 +163,9 @@ function buildMenu() {
 
 function buildContactMain() {
   const main = document.createElement("main");
+
+  const contact = document.createElement("main");
+
   content.appendChild(main);
 }
 
