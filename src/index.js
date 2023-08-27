@@ -27,6 +27,21 @@ function buildNav() {
     content.appendChild(nav);
 }
 
+function buildFooter() {
+    const footer = document.createElement("footer");
+
+    const footerText = document.createElement("p");
+    footerText.innerText = "Made by ";
+    const githubLink = document.createElement("a");
+    githubLink.innerText = "Rafael P.";
+    githubLink.href = "https://github.com/crispynoodlesoup"; 
+    githubLink.target = "_blank";
+    footerText.appendChild(githubLink);
+    footer.appendChild(footerText);
+
+    content.appendChild(footer);
+}
+
 function buildHomeMain() {
     const main = document.createElement("main");
     
@@ -55,25 +70,14 @@ function buildHomeMain() {
     content.appendChild(main);
 }
 
-function buildFooter() {
-    const footer = document.createElement("footer");
-
-    const footerText = document.createElement("p");
-    footerText.innerText = "Made by ";
-    const githubLink = document.createElement("a");
-    githubLink.innerText = "Rafael P.";
-    githubLink.href = "https://github.com/crispynoodlesoup"; 
-    githubLink.target = "_blank";
-    footerText.appendChild(githubLink);
-    footer.appendChild(footerText);
-
-    content.appendChild(footer);
+function buildHome() {
+  buildNav();
+  buildHomeMain();
+  buildFooter();
+  document.querySelector(".nav-link").classList.add("selected-nav-page");
 }
 
-buildNav();
-buildHomeMain();
-buildFooter();
-document.querySelector(".nav-link").classList.add("selected-nav-page");
+buildHome();
 
 window.onscroll = function() { handleNav() };
 
