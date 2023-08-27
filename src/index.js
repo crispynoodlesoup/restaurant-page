@@ -34,7 +34,7 @@ function buildHomeMain() {
     welcome.className = "welcome";
 
     const welcomeImg = document.createElement("img");
-    welcomeImg.src = "../src/cute_bread.png";
+    welcomeImg.src = "./cute_bread.png";
     welcome.appendChild(welcomeImg);
     
     const welcomeTitle = document.createElement("h1");
@@ -44,6 +44,11 @@ function buildHomeMain() {
     const welcomeText = document.createElement("p");
     welcomeText.innerText = "We have bread galore! bread rolls, bread sticks, bread bowls, bread bites, get them all here!";
     welcome.appendChild(welcomeText);
+    
+    const discretion = document.createElement("p");
+    discretion.innerText = "*Eric is not responsible for those who die of the overwhelming joy that comes with eating his bread";
+    discretion.className = "discretion";
+    welcome.appendChild(discretion);
 
     main.appendChild(welcome);
 
@@ -68,6 +73,7 @@ function buildFooter() {
 buildNav();
 buildHomeMain();
 buildFooter();
+document.querySelector(".nav-link").classList.add("selected-nav-page");
 
 window.onscroll = function() { handleNav() };
 

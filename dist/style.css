@@ -52,7 +52,7 @@ nav h2:hover {
 
 .nav-link {
   font-weight: 800;
-  color: #ffedc7;
+  color: #ffe8b5;
   transition: all 0.3s ease-in-out;
 }
 
@@ -62,8 +62,13 @@ nav h2:hover {
   cursor: pointer;
 }
 
+.selected-nav-page {
+  color: white;
+  text-decoration: underline 2px;
+}
+
 main {
-  background-image: url("../src/waffle_salt.png");
+  background-image: url("./waffle_salt.png");
   background-color: #050505;
   background-size: auto 100vh;
   background-position: 50% 0%;
@@ -71,6 +76,7 @@ main {
   height: 100vh;
   display: grid;
   justify-content: right;
+  align-content: center;
   padding-top: 65px;
 }
 
@@ -78,7 +84,7 @@ main {
   margin: 64px;
   text-align: center;
   background-color: #f3f3f32c;
-  width: 320px;
+  width: 420px;
   height: fit-content;
   color: white;
   padding: 32px;
@@ -88,8 +94,13 @@ main {
   margin-top: 16px;
 }
 
+.discretion {
+  font-weight: 800;
+  font-size: 12px;
+}
+
 .welcome img {
-  width: 128px;
+  width: 150px;
   margin-top: -16px;
 }
 
