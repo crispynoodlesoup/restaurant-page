@@ -1,5 +1,10 @@
 const content = document.querySelector("#content");
 
+function clearContent() {
+  const children = [...content.children];
+  children.forEach((child) => content.removeChild(child));
+}
+
 function buildNav() {
     const nav = document.createElement("nav");
 
@@ -10,12 +15,17 @@ function buildNav() {
     const homeButton = document.createElement("li");
     homeButton.innerText = "HOME";
     homeButton.className = "nav-link";
+    homeButton.addEventListener("click", buildHome);
+    
     const menuButton = document.createElement("li");
     menuButton.innerText = "MENU";
     menuButton.className = "nav-link";
+    menuButton.addEventListener("click", buildMenu);
+    
     const contactButton = document.createElement("li");
     contactButton.innerText = "CONTACT";
     contactButton.className = "nav-link";
+    contactButton.addEventListener("click", buildContact);
 
     navList.appendChild(homeButton);
     navList.appendChild(menuButton);
@@ -71,13 +81,40 @@ function buildHomeMain() {
 }
 
 function buildHome() {
+  clearContent();
   buildNav();
   buildHomeMain();
   buildFooter();
   document.querySelector(".nav-link").classList.add("selected-nav-page");
 }
 
-buildHome();
+function buildMenuMain() {
+  const main = document.createElement("main");
+  content.appendChild(main);
+}
+
+function buildMenu() {
+  clearContent();
+  buildNav();
+  buildMenuMain();
+  buildFooter();
+  document.querySelector(".nav-link:nth-child(2)").classList.add("selected-nav-page");
+}
+
+function buildContactMain() {
+  const main = document.createElement("main");
+  content.appendChild(main);
+}
+
+function buildContact() {
+  clearContent();
+  buildNav();
+  buildContactMain();
+  buildFooter();
+  document.querySelector(".nav-link:nth-child(3)").classList.add("selected-nav-page");
+}
+
+buildHome(); // initialize with home screen
 
 window.onscroll = function() { handleNav() };
 
