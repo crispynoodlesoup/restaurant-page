@@ -104,6 +104,37 @@ main {
   margin-top: -16px;
 }
 
+.menu {
+  margin: 64px;
+  text-align: center;
+  background-color: #f3f3f32c;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  padding: 32px;
+}
+
+.menu-text {
+  margin-bottom: 16px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.menu-item-img {
+  width: 64px;
+}
+
+.menu-item-text {
+  text-align: left;
+  width: 120px;
+  color: white;
+}
+
 footer {
   display: flex;
   flex-direction: column;

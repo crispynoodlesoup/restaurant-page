@@ -97,6 +97,58 @@ function buildHome() {
 
 function buildMenuMain() {
   const main = document.createElement("main");
+
+  const menu = document.createElement("div");
+  menu.className = "menu";
+
+  const menuTitle = document.createElement("h1");
+  menuTitle.className = "menu-title";
+  menuTitle.innerText = "Menu";
+  menu.appendChild(menuTitle);
+
+  const menuText = document.createElement("p");
+  menuText.className = "menu-text";
+  menuText.innerText = "From the finest selection of buns";
+  menu.appendChild(menuText);
+
+  const menuItem1 = document.createElement("div");
+  menuItem1.className = "menu-item";
+  const donut = document.createElement("img");
+  donut.className = "menu-item-img";
+  donut.src = "./donut.png";
+  const donutText = document.createElement("h3");
+  donutText.innerText = "donuts!";
+  donutText.className = "menu-item-text";
+  menuItem1.appendChild(donut);
+  menuItem1.appendChild(donutText);
+  menu.appendChild(menuItem1);
+
+  const menuItem2 = document.createElement("div");
+  menuItem2.className = "menu-item";
+  const croissant = document.createElement("img");
+  croissant.className = "menu-item-img";
+  croissant.src = "./croissant.png";
+  const croissantText = document.createElement("h3");
+  croissantText.innerText = "croissant!";
+  croissantText.className = "menu-item-text";
+  menuItem2.appendChild(croissant);
+  menuItem2.appendChild(croissantText);
+  menu.appendChild(menuItem2);
+
+  const menuItem3 = document.createElement("div");
+  menuItem3.className = "menu-item";
+  const cakes = document.createElement("img");
+  cakes.className = "menu-item-img";
+  cakes.src = "./pancakes.png";
+  const cakesText = document.createElement("h3");
+  cakesText.innerText = "hot cakes!";
+  cakesText.className = "menu-item-text";
+  menuItem3.appendChild(cakes);
+  menuItem3.appendChild(cakesText);
+  menu.appendChild(menuItem3);
+
+  main.appendChild(menu);
+
   content.appendChild(main);
 }
 
